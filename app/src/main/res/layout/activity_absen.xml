@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AbsenActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_tgl_jam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ini jam"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ini absen apa?"/>
+
+    <RadioGroup
+        android:id="@+id/rg_absenApa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/pagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagi"/>
+        <RadioButton
+            android:id="@+id/sore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sore"/>
+
+    </RadioGroup>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_ngapain"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="hari ini kamu ngapain aja?"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit_absen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:background="@color/biru"/>
+
+
+</LinearLayout>

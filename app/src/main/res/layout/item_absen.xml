@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_waktu_absen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="waktu absen"/>
+
+        <TextView
+            android:id="@+id/tv_absen_apa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_waktu_absen"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="absen apa"/>
+
+        <TextView
+            android:id="@+id/tv_ngapain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_absen_apa"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="ngapain aja"
+            android:paddingTop="8dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_waktu_absen"
+            app:layout_constraintBottom_toBottomOf="@id/tv_absen_apa"
+            android:src="@drawable/icon_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            app:layout_constraintEnd_toStartOf="@+id/iv_delete"
+            app:layout_constraintTop_toTopOf="@id/tv_waktu_absen"
+            app:layout_constraintBottom_toBottomOf="@id/tv_absen_apa"
+            android:src="@drawable/icon_write"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="8dp"
+    >
+
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Absensi"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_password"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:textColor="@color/biru" />
+
+    <TextView
+        android:id="@+id/tv_lupa"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:textColor="@color/biru" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login_beneran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Masuk"
+        android:background="@color/biru"/>
+
+
+
+</LinearLayout>

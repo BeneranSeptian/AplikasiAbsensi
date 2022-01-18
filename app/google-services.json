@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "939577100956",
+    "project_id": "aplikasi-absensi-c6753",
+    "storage_bucket": "aplikasi-absensi-c6753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939577100956:android:e7dc3649e8971c1a2c7b59",
+        "android_client_info": {
+          "package_name": "kki.seftian.aplikasiabsensi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939577100956-8p4cmg8qbpudakr2idjlg8gjdn66707a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOZ7DauDHSRF8Hv_F0SRbN5fAJsM39GcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939577100956-8p4cmg8qbpudakr2idjlg8gjdn66707a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
